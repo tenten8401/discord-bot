@@ -28,7 +28,7 @@ RUN apt -y install openjdk-8-jdk
 RUN apt -y install python python3
 
     # C Sharp & .NET
-RUN apt -y install mono
+RUN apt -y install mono-runtime
 
     # Lua 5.3
 RUN apt -y install lua5.3
