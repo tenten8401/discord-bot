@@ -7,6 +7,11 @@ RUN apt update \
     && apt -y install curl software-properties-common \
     && useradd -d /home/container -m container
 
+    # Ensure UTF-8
+RUN locale-gen en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LC_ALL en_US.UTF-8
+
     # NodeJS
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - \
     && apt -y install nodejs
