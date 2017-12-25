@@ -4,7 +4,7 @@ MAINTAINER Isaac A., <isaac@isaacs.site>
 
 RUN apt update \
     && apt upgrade -y \
-    && apt -y install curl \
+    && apt -y install curl software-properties-common \
     && useradd -d /home/container -m container
 
     # NodeJS
