@@ -14,6 +14,7 @@ ENV LC_ALL en_US.UTF-8
 
     # NodeJS
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - \
+    && apt update \
     && apt -y install nodejs
 
     # PHP 7.1
