@@ -4,10 +4,11 @@ MAINTAINER Isaac A., <isaac@isaacs.site>
 
 RUN apt update \
     && apt upgrade -y \
-    && adduser -D -h /home/container container
+    && apt -y install curl \
+    && useradd -d /home/container -m container
 
     # NodeJS
-RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash - \
+RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - \
     && apt -y install nodejs
 
     # PHP 7.1
