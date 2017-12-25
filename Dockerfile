@@ -4,7 +4,7 @@ MAINTAINER Isaac A., <isaac@isaacs.site>
 
 RUN apt update \
     && apt upgrade -y \
-    && apt -y install curl software-properties-common locales \
+    && apt -y install curl software-properties-common locales git \
     && useradd -d /home/container -m container
 
     # Ensure UTF-8
