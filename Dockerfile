@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER Revolve Hosting, <admin@revolve.host>
+MAINTAINER David Razdolski, <admin@unreliable.site>
 
 RUN apt update \
     && apt upgrade -y \
