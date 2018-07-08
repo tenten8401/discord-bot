@@ -19,7 +19,7 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - \
     # PHP 7.1
 RUN add-apt-repository -y ppa:ondrej/php \
     && apt update \
-    && apt -y install php7.1 php7.1-cli php7.1-gd php7.1-mysql php7.1-pdo php7.1-mbstring php7.1-tokenizer php7.1-bcmath php7.1-xml php7.1-fpm php7.1-curl php7.1-zip
+    && apt -y install php7.2 php7.2-cli php7.2-gd php7.2-mysql php7.2-pdo php7.2-mbstring php7.2-tokenizer php7.2-bcmath php7.2-xml php7.2-fpm php7.2-curl php7.2-zip
 
     # OpenJDK 8
 RUN apt -y install openjdk-8-jdk
